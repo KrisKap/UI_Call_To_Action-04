@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 70px 0 70px 0;
+  margin: 0;
+  background-color: #FF6F00;
+  background-image: url('img/furniture_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 100% bottom;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.cta__title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.cta__text {
+  font-size: 1.2em;
+  line-height: 1.5;
+  display: inline-block;
+  color: #fff;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+.cta__link {
+  font-size: 0.75em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.cta__image {
+  /* width: 400px; */
+  /* max-width: 100%; */
+}
+
+.cta__message--error,
+.cta__message--success {
+  display: none;
+}
+
+
+
+
+
+@media (max-width:1060px) {
+
+  .cta {
+    background:linear-gradient(rgba(20,20,20, .7),
+                               rgba(20,20,20, .7)),
+                               url('img/furniture_1280.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    text-align: center;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .cta__text {
+    font-size: 0.8em;
+  }
+
+}
